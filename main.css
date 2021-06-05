@@ -90,6 +90,11 @@ body {
   padding: 0.5em;
 }
 
+.project-titles {
+  text-decoration: none;
+  color: #212529;
+}
+
 .skills-container {
   width: 600px;
   margin: 0 auto;
