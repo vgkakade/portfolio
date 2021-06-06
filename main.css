@@ -116,12 +116,15 @@ body {
   font-size: 20px;
   margin-top: 8px;
 }
+
 svg:not(:root).svg-inline--fa {
   overflow: visible;
 }
+
 .svg-inline--fa.fa-w-16 {
   width: 1em;
 }
+
 .svg-inline--fa {
   display: inline-block;
   font-size: inherit;
@@ -136,6 +139,13 @@ svg:not(:root).svg-inline--fa {
   gap: 2em;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+.project-column {
+}
+
+.project-column:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .project-thumbnail {
@@ -156,16 +166,33 @@ svg:not(:root).svg-inline--fa {
 .skills-container {
   width: 600px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 0.5em;
+}
+
+h3,
+h4 {
+  font-weight: 600;
 }
 
 .skill-wrapper {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.skill-wrapper h5 {
+  font-weight: 600;
+}
+
+.skill-logo {
+  width: 60px;
 }
 
 .other-skills-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
 }
 
@@ -190,10 +217,24 @@ svg:not(:root).svg-inline--fa {
   .hero-content {
     width: 100%;
   }
+
+  .hero-contacts-wrapper {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 600px) {
   .skills-container {
     width: 100%;
+  }
+
+  .hero-contacts-wrapper {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .skill-wrapper {
+    flex-direction: column;
   }
 }
