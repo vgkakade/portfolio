@@ -41,7 +41,7 @@ body {
 .hero-content {
   width: 800px;
   margin: 0 auto;
-  padding-top: 3em;
+  padding-top: 1em;
 }
 
 .hero-content-intro {
@@ -69,13 +69,19 @@ body {
   text-align: center;
 }
 
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-contacts-info-wrapper {
+  width: max-content;
+  margin-left: 0.5em;
+}
+
 .hero-contacts-wrapper {
   width: max-content;
-  display: flex;
-  gap: 1em;
   margin-right: 0.5em;
-  margin-left: auto;
-  margin-bottom: 1em;
 }
 
 .hero-contact {
@@ -221,6 +227,13 @@ h4 {
   .hero-contacts-wrapper {
     margin: 0 auto;
   }
+
+  .hero-contacts-info-wrapper {
+    margin: 0 auto;
+  }
+  .main {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 600px) {
@@ -228,13 +241,28 @@ h4 {
     width: 100%;
   }
 
-  .hero-contacts-wrapper {
+  .hero-contacts-info-wrapper {
     margin: 0 auto;
+  }
+
+  .hero-contacts-wrapper {
+    margin: 1em auto;
+  }
+  .main {
+    flex-direction: column;
   }
 }
 
 @media (max-width: 400px) {
   .skill-wrapper {
+    flex-direction: column;
+  }
+
+  .hero-contacts-info-wrapper {
+    margin: 0 auto;
+  }
+
+  .main {
     flex-direction: column;
   }
 }
