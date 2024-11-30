@@ -17,6 +17,7 @@
     />
 
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="timeline.css" />
     <title>Vaibhav Kakade</title>
   </head>
   <body>
@@ -41,7 +42,7 @@
         </div>
 
         <div class="hero-content-subheadline">
-          <h3 class="description">Senior Software Engineer</h3>
+          <!-- <h3 class="description">Senior Software Engineer</h3> -->
           <p class="slogan">Hustle. Learn. Implement. Repeat</p>
         </div>
       </div>
@@ -119,58 +120,99 @@
       <h3>My Projects</h3>
       <h5>Curiosity made me do these things</h5>
       <div class="projects-wrapper">
-        <div class="project-column">
-          <a
-            href="https://github.com/vgkakade/SpaceInvaders"
-            target="_blank"
-            class="project-title"
-          >
-            <img
-              class="project-thumbnail"
-              src="asset/images/project/space_invaders.png"
-            />
-            <div class="project-body">
-              <h5>Space Invaders</h5>
-            </div>
-          </a>
+        <div class="card project-column" style="width: 22rem;">
+          <img src="asset/images/project/space_invaders.png" class="card-img-top project-thumbnail" alt="Space Invaders">
+          <div class="card-body">
+            <h5 class="project-title">Space Invaders</h5>
+            <p class="card-text project-body">A fun and nostalgic space-themed game built with Python and Pygame.</p>
+            <a href="https://github.com/vgkakade/SpaceInvaders" 
+               target="_blank"
+                class="btn btn-dark">View on Github</a>
+          </div>
         </div>
 
-        <div class="project-column">
-          <a
-            href="https://github.com/vgkakade/Pysnake"
-            target="_blank"
-            class="project-title"
-          >
-            <img
-              class="project-thumbnail"
-              src="asset/images/project/pySnake.png"
-            />
-            <div class="project-body">
-              <h5>PySnake</h5>
-            </div>
-          </a>
+        <div class="card project-column" style="width: 22rem;">
+          <img src="asset/images/project/pySnake.png" class="card-img-top project-thumbnail" alt="PySnake">
+          <div class="card-body">
+            <h5 class="project-title">PySnake</h5>
+            <p class="card-text project-body">A classic snake game built using Python and Pygame, perfect for casual gaming.</p>
+            <a href="https://github.com/vgkakade/Pysnake" 
+               target="_blank"
+                class="btn btn-dark">View on Github</a>
+          </div>
         </div>
 
-        <div class="project-column">
-          <a 
-            href="https://github.com/vgkakade/BambooTantra_backend" 
-            target="_blank" 
-            class="project-title">
-            <img
-              class="project-thumbnail"
-              src="asset/images/project/ecommerce.jpg"
-            />
-            <div class="project-body">
-              <h5>Ecommerce</h5>
-            </div>
-          </a>
+        <div class="card project-column" style="width: 22rem;">
+          <img src="asset/images/project/ecommerce.jpg" class="card-img-top project-thumbnail" alt="Ecommerce">
+          <div class="card-body">
+            <h5 class="project-title">Ecommerce</h5>
+            <p class="card-text project-body">eCommerce backend system developed using Django, DRF, and ReactJS.</p>
+            <a href="https://github.com/vgkakade/BambooTantra_backend" 
+               target="_blank"
+                class="btn btn-dark">View on Github</a>
+          </div>
         </div>
       </div>
 
       <div class="about-wrapper">
         <h3>About Me</h3>
         <p>Voracious reader, gamer and an occassional cook.</p>
-        <br />
+
+        <!-- Timeline Start -->
+        <div class="timeline-container">
+          <div class="timeline"></div>
+  
+          <!-- Event 1 -->
+          <div class="timeline-event event-1">
+              <div class="timeline-year">2018</div>
+              <div class="timeline-description">
+                  <p class="text-center">Graduated</p>
+              </div>
+          </div>
+  
+          <!-- Event 2 -->
+          <div class="timeline-event event-2">
+            <div class="timeline-year">2018</div>
+            <div class="timeline-description">
+                <p class="text-center">Trainee Developer, Birlasoft Pvt Ltd</p>
+            </div>
+        </div>
+  
+          <!-- Event 2 -->
+          <div class="timeline-event event-3">
+              <div class="timeline-year">2019</div>
+              <div class="timeline-description">
+                  <p class="text-center">Consultant, Birlasoft Pvt Ltd</p>
+              </div>
+          </div>
+  
+          <!-- Event 3 -->
+          <div class="timeline-event event-4">
+              <div class="timeline-year">2021</div>
+              <div class="timeline-description">
+                  <p class="text-center">Software Engineer, Qualys</p>
+              </div>
+          </div>
+  
+          <!-- Event 4 -->
+          <div class="timeline-event event-5">
+              <div class="timeline-year">2022</div>
+              <div class="timeline-description">
+                  <p class="text-center">Senior Software Engineer, Qualys</p>
+              </div>
+          </div>
+  
+          <!-- Event 5 -->
+          <div class="timeline-event event-6">
+              <div class="timeline-year">2024</div>
+              <div class="timeline-description">
+                  <p class="text-center">Senior Software Engineer, CriticalStart</p>
+              </div>
+          </div>
+
+          <!-- Timeline End -->
+      </div>
+
 
         <h3>Work Experience</h3>
         <p>

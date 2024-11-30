@@ -27,7 +27,6 @@ body {
 
 .hero {
   background-color: #1f2428;
-  min-height: 70vh;
   color: #fff;
 }
 
@@ -150,7 +149,6 @@ svg:not(:root).svg-inline--fa {
 .project-column {
   position: relative;
   overflow: hidden;
-  margin: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 5px;
 }

@@ -1,0 +1,65 @@
+.timeline-container {
+    position: relative;
+    margin-bottom: 120px;
+}
+
+/* Horizontal timeline bar */
+.timeline {
+    position: relative;
+    width: 90%;
+    height: 2px;
+    background-color: rgb(119, 119, 119);
+    margin-top: 50px;
+}
+
+/* Event Circle placed on the timeline */
+.timeline-event {
+    position: absolute;
+    top: -10px; /* Adjusted to be on the line */
+    width: 20px;
+    height: 20px;
+    background-color: rgb(214, 213, 213);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid rgb(75, 75, 75);
+}
+
+/* Year above each vertical line */
+.timeline-year {
+    position: absolute;
+    top: -23px; /* Year placed above the vertical line */
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Event description centered under the event circle */
+.timeline-description {
+    position: absolute;
+    top: 25px; /* Position it below the event circle */
+    left: 50%;
+    transform: translateX(-50%); /* Centered horizontally */
+    width: fit-content;
+    border-radius: 4px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    font-size: 12px;
+}
+
+.timeline-event:hover .timeline-description {
+    opacity: 1;
+    visibility: visible;
+}
+
+.timeline-event:hover {
+    transform: scale(1.2);
+}
+
+/* Adjust positions of events along the timeline */
+.event-1 { left: 0%; }
+.event-2 { left: 8%; }
+.event-3 { left: 15%; }
+.event-4 { left: 45%; }
+.event-5 { left: 60%; }
+.event-6 { left: 90%; }
